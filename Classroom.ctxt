@@ -1,8 +1,5 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Classroom()
+comment0.params=percentVaccinated\ isOneInfected\ roomNumber
+comment0.target=Classroom(double,\ boolean,\ int)
 comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Classroom\n
-comment1.params=percentVaccinated\ isOneInfected\ roomNumber
-comment1.target=void\ fillClassroom(double,\ boolean,\ int)
-comment1.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\ \n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \n
-numComments=2
+numComments=1

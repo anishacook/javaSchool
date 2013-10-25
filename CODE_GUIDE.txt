@@ -1,0 +1,16 @@
+CLASSES:
+
+    SCHOOL
+
+
+    CLASSROOM
+
+    
+    HUMAN
+
+    
+    
+    PATHOGEN**
+
+    USER*
+    INTERFACE*
