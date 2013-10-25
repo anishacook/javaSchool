@@ -1,8 +1,5 @@
 #BlueJ class context
-comment0.params=percentVaccinated\ numberInfected
-comment0.target=School(double,\ int)
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ School\n\ @param\ percentVaccinated\ double\ percent\ of\ students\ vaccinated\n\ @param\ numberInfected\ int\ number\ infected\n
-comment1.params=percentVaccinated
-comment1.target=School(double)
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ School\n\ assumes\ one\ is\ vaccinated\n\ @param\ percentVaccinated\ double\ percent\ of\ students\ vaccinated\n\ \n
-numComments=2
+comment0.params=numberClassrooms\ numberHumans
+comment0.target=School(int,\ int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ School\n\ assumes\ one\ is\ vaccinated\n\ @param\ percentVaccinated\ double\ percent\ of\ students\ vaccinated\n\ \n
+numComments=1

@@ -7,37 +7,20 @@
  */
 public class Classroom
 {
-    //public static Human student0;
-    public static Human student1;
-    public static Human student2;
-    public static Human student3;
-    public static Human student4;
-    public static int roomNumber;
+    public static Human[] student;
 
     /**
      * Constructor for objects of class Classroom
      */
-    public Classroom(double percentVaccinated, boolean isOneInfected, int roomNumber)
+    public Classroom(int numberHumans)
     {
-        // NAME.human(int humanType, boolean isVaccinated, boolean isInfected, int location)
-        this.roomNumber = roomNumber;
-        if(isOneInfected == true)
+ 
+
+        student = new Human[numberHumans];
+        for(int i=0; i<numberHumans; i++)
         {
-            student1 = new Human(0,true, true, roomNumber);
+            student[i] = new Human();
         }
-        else
-        {
-            student1 = new Human(0,true,false,roomNumber);
-        }
-        student2 = new Human(0,true,false,roomNumber);
-        student3 = new Human(0,true,false,roomNumber);
-        student4 = new Human(0,true,false,roomNumber);
-        //teacher = new Human(0,true,false,roomNumber);
-        
-        Human[] roomStudents = 
-        {
-            student1, student2, student3, student4
-        };
     }
 
 
