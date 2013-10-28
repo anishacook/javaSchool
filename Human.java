@@ -8,8 +8,9 @@
 public class Human
 {
 
-    private boolean isVaccinated;
-    private boolean isInfected = true;
+    public boolean isVaccinated = false;
+    public boolean isInfected = false;
+    public static int interactions = 0;
 
     
     
@@ -27,7 +28,7 @@ public class Human
      * 
      * @return isInfected boolean value whether or not person is infected
      */
-    public boolean getInfectState()
+    public boolean isInfected()
     {
         return isInfected;
     }
@@ -36,14 +37,10 @@ public class Human
      * 
      * @return isVaccinated boolean value whether or not person is vaccinated
      */
-    public boolean getVaccineState()
+    public boolean isVaccinated()
     {
         return isVaccinated;
     }
     
-
-    public void infect()
-    {
-        isInfected = true;
-    }
+    
 }
