@@ -28,7 +28,7 @@ public class Runner
         {
             for(int student=0; student < (int) susceptInRoom; student++)
             {
-               poly.classroom[room].student[student].isVaccinated = false;
+               //poly.classroom[room].student[student].isVaccinated = false;
             }
         }
         
@@ -36,10 +36,10 @@ public class Runner
        
        int roomID = random.nextInt(NUMBER_CLASSROOMS);
        int studentID = random.nextInt(NUMBER_STUDENTS_PER_ROOM);
-       poly.classroom[roomID].student[studentID].isInfected = true;
+       poly.classroom[roomID].student[studentID].makeInfected();
        System.out.println(roomID);
        System.out.println(studentID);
-       System.out.println(poly.classroom[roomID].student[studentID].isInfected);
+       System.out.println(poly.classroom[roomID].student[studentID].isInfected());
        
        
        //interactions (where interaction means contact through transmission -possible eg/ flu sneeze)
@@ -52,11 +52,13 @@ public class Runner
        System.out.println("\nINFECTED STUDENTS \n");
        for(int room=0; room < NUMBER_CLASSROOMS; room++)
         {
-            System.out.println("Room #" +(room + 1));
             for(int student=0; student < (int) susceptInRoom; student++)
             {
-                if(poly.classroom[room].student[student].isInfected == true)
+                boolean isInfected = poly.classroom[room].student[student].isInfected();
+                System.out.println(isInfected);
+                if(isInfected)
                 {
+                    System.out.println("Room #" + (room +1));
                     System.out.println("    Student #" +(student +1));
                 }
                 else System.out.print("");

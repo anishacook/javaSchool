@@ -8,4 +8,6 @@ comment1.text=\n\ getInfectState\ \n\ \n\ @return\ isInfected\ boolean\ value\ w
 comment2.params=
 comment2.target=boolean\ isVaccinated()
 comment2.text=\n\ getVaccineState\n\ \n\ @return\ isVaccinated\ boolean\ value\ whether\ or\ not\ person\ is\ vaccinated\n
-numComments=3
+comment3.params=
+comment3.target=void\ makeInfected()
+numComments=4

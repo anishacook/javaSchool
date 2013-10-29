@@ -8,8 +8,8 @@
 public class Human
 {
 
-    public boolean isVaccinated = false;
-    public boolean isInfected = false;
+    private boolean isVaccinated = false;
+    private boolean isInfected = false;
     public static int interactions = 0;
 
     
@@ -40,6 +40,11 @@ public class Human
     public boolean isVaccinated()
     {
         return isVaccinated;
+    }
+    
+    public void makeInfected()
+    {
+        isInfected = true;
     }
     
     
